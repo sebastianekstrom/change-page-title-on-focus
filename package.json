@@ -1,0 +1,11 @@
+{
+  "name": "change-page-title-on-focus",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.9.2"
+  }
+}

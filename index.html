@@ -5,45 +5,5 @@
     <title>Change page title on focus</title>
   </head>
   <body>
-  <script>
-    class PageTitleChange {
-
-      constructor(noFocusTitle, focusTitle) {
-        this.noFocusTitle = noFocusTitle;
-        this.focusTitle = focusTitle;
-      }
-
-      init() {
-        this.listenToChange();
-      }
-
-      listenToChange() {
-        let hidden;
-        let state;
-        let visibilityChange;
-
-        if (typeof document.hidden !== "undefined") {
-          hidden = "hidden";
-          visibilityChange = "visibilitychange";
-          state = "visibilityState";
-        }
-
-        document.addEventListener(visibilityChange, ()=> {
-          this.setTitle(document[state]);
-        }, false);
-
-      }
-
-      setTitle(state) {
-        let title = state === "hidden" ? this.noFocusTitle : this.focusTitle;
-        document.title = title;
-      }
-
-    }
-
-    let setPageTitle = new PageTitleChange("I'm not focused!", document.title);
-    setPageTitle.init();
-  </script>
-
   </body>
 </html>
