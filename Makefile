@@ -1,4 +1,4 @@
-.PHONY: install clean build
+.PHONY: install clean build serve
 
 install:
 	npm prune
@@ -7,6 +7,9 @@ install:
 clean:
 	rm -rf lib
 	rm -rf build
+
+serve:
+	coffee -o lib -cw src
 
 build: clean
 	coffee -o lib -c src
