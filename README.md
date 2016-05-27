@@ -8,9 +8,13 @@ Add the following to `package.json`:
 
 ```
 "dependencies": {
-  "page-title-change": "XXXX",
+  "page-title-change": "~0.1.0",
 }
 ```
+
+## Development
+
+To compile or make changes to the source files, first install the dependencies with `make install`, after that you just run `make serve` and your good to go!
 
 ## Contributing
 
