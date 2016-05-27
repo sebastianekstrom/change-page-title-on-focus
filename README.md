@@ -12,6 +12,8 @@ Add the following to `package.json`:
 }
 ```
 
+## Browser support
+
 ## Development
 
 To compile or make changes to the source files, first install the dependencies with `make install`, after that you just run `make serve` and your good to go!
